@@ -416,7 +416,8 @@ b, strong {
   background-color: #36a6cf;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0; }
+  padding: 0;
+  padding-bottom: 10px; }
   .left_mnu .like_h2 {
     background-color: #1f93be;
     font-family: MuseoSansCyrl900;
@@ -477,16 +478,27 @@ h3 {
 
 .img_block {
   width: 100%;
-  background-color: #f2f2f2;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  background-color: #36a6cf;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 25px;
+  overflow: hidden;
+  color: #fff;
+  font-family: MuseoSansCyrl300;
+  font-size: 15px; }
+
+.img_block_img {
+  float: left;
+  width: 270px;
+  font-size: 0;
+  line-height: 1; }
+
+.img_block_text {
   padding: 20px;
-  margin-bottom: 25px; }
-  .img_block img {
-    -webkit-border-radius: 5px;
-            border-radius: 5px; }
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 600px; }
 
 .floatleft {
   float: left;
@@ -500,36 +512,36 @@ h3 {
   background-color: #F2F2F2;
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 20px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  overflow: hidden; }
+  margin-bottom: 20px; }
   .price_table td {
     padding: 10px 15px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     vertical-align: middle; }
   .price_table tr:first-child {
-    color: #2f2f2f;
+    color: #fff;
     font-family: MuseoSansCyrl900;
-    font-size: 15px;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    overflow: hidden; }
+    font-size: 15px; }
     .price_table tr:first-child td {
-      background-color: #E0E0E0; }
+      background-color: #36a6cf;
+      padding: 15px; }
+  .price_table tr:nth-child(2n) {
+    background-color: #F2F2F2; }
+  .price_table tr:nth-child(2n+1) {
+    background-color: #EBEBEB; }
   .price_table td {
-    padding: 15px; }
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 1;
+    font-family: MuseoSansCyrl500; }
   .price_table tbody tr {
     color: #2f2f2f;
     font-family: MuseoSansCyrl500;
     font-size: 15px; }
-  .price_table tbody td {
-    border-bottom: 1px solid #e0e0e0; }
-    .price_table tbody td:nth-child(2n-1) {
-      width: 50%; }
-    .price_table tbody td:nth-child(2n) {
-      width: 30%; }
+  .price_table tbody td:nth-child(2n-1) {
+    width: 50%; }
+  .price_table tbody td:nth-child(2n) {
+    width: 30%; }
 
 .last_news {
   margin-top: 45px; }
@@ -551,7 +563,7 @@ h3 {
   .last_news .all_lnews_link {
     display: block;
     text-align: left;
-    color: #ff9000;
+    color: #36a6cf;
     font-family: MuseoSansCyrl700;
     font-size: 15px;
     text-decoration: underline; }
@@ -560,14 +572,13 @@ h3 {
 
 .left_form {
   width: 270px;
-  background-color: #ff9000;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  background-color: #36a6cf;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px; }
+  padding: 20px 20px 39px 20px;
+  position: relative; }
   .left_form .like_h3 {
-    color: #2f2f2f;
+    color: #fff;
     font-family: MuseoSansCyrl900;
     font-size: 18px;
     margin-bottom: 20px;
@@ -578,9 +589,7 @@ h3 {
     height: 39px;
     width: 100%;
     background-color: white;
-    border: 2px solid #ffba60;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
+    border: none;
     padding: 0 15px;
     color: #2f2f2f;
     font-family: MuseoSansCyrl300;
@@ -592,9 +601,7 @@ h3 {
     width: 100%;
     height: 89px;
     background-color: white;
-    border: 2px solid #ffba60;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
+    border: none;
     padding: 10px 15px;
     color: #2f2f2f;
     font-family: MuseoSansCyrl300;
@@ -603,17 +610,19 @@ h3 {
   .left_form button {
     width: 100%;
     height: 39px;
-    background-color: black;
+    background-color: #fff000;
     border: none;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
     text-align: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     color: white;
     font-family: MuseoSansCyrl300;
     font-size: 15px;
-    line-height: 18px; }
+    line-height: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #000; }
 
 .left_widget_vk {
   text-align: center;
@@ -621,17 +630,16 @@ h3 {
   margin-bottom: 20px; }
 
 .footer {
-  background-color: #F2F2F2;
+  background-color: #36a6cf;
   padding: 30px 0;
+  color: #FFF;
   overflow: hidden; }
 
 .copy {
-  color: #2f2f2f;
   font-family: MuseoSansCyrl300;
   font-size: 14px; }
 
 .footer_adress {
-  color: #2f2f2f;
   font-family: MuseoSansCyrl500;
   font-size: 12px;
   margin-left: 45px;
@@ -642,7 +650,6 @@ h3 {
   overflow: hidden; }
 
 .footer_phone {
-  color: #2f2f2f;
   font-family: MuseoSansCyrl700;
   font-size: 18px;
   padding-left: 20px;
@@ -653,7 +660,7 @@ h3 {
     font-family: MuseoSansCyrl500; }
 
 .footer_mail a {
-  color: #ff950c;
+  color: #FFF;
   font-family: MuseoSansCyrl700;
   font-size: 14px;
   text-decoration: underline;

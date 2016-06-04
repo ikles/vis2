@@ -329,6 +329,7 @@ b, strong
 	background-color: #36a6cf
 	box-sizing: border-box
 	padding: 0
+	padding-bottom: 10px
 	.like_h2
 		background-color: rgb(31, 147, 190)
 		font-family: MuseoSansCyrl900
@@ -391,14 +392,29 @@ h3
 
 .img_block 
 	width: 100%
-	background-color: rgb(242, 242, 242)
-	border-radius: 5px
+	background-color: #36a6cf
 	box-sizing: border-box
-	padding: 20px
 	margin-bottom: 25px
+	overflow: hidden
+	color: #fff
+	font-family: MuseoSansCyrl300
+	font-size: 15px
 	img 
-		border-radius: 5px 
-	
+
+.img_block_img 
+	float: left
+	width: 270px
+	font-size: 0
+	line-height: 1
+
+
+.img_block_text 
+	padding: 20px
+	float: left
+	box-sizing: border-box
+	width: 600px
+
+
 .floatleft 
 	float: left
 	margin: 0 30px 15px 0 
@@ -412,8 +428,6 @@ h3
 	width: 100%
 	margin-top: 20px
 	margin-bottom: 20px
-	border-radius: 5px 
-	overflow: hidden
 	td 
 		padding: 10px 15px
 		box-sizing: border-box
@@ -421,17 +435,22 @@ h3
 
 	tr 
 		&:first-child 
-			color: rgb(47, 47, 47)
+			color: #fff
 			font-family: MuseoSansCyrl900
 			font-size: 15px
-			border-radius:  5px
-			overflow: hidden
 			td 
-				background-color: #E0E0E0
-			
-		
+				background-color: #36a6cf
+				padding: 15px
+		&:nth-child(2n) 
+			background-color: #F2F2F2 
+		&:nth-child(2n+1) 
+			background-color: #EBEBEB 
+
 	td 
-		padding: 15px
+		padding: 10px 15px
+		font-size: 15px
+		line-height: 1
+		font-family: MuseoSansCyrl500
 		&:first-child 
 			
 	tbody 
@@ -440,7 +459,6 @@ h3
 			font-family: MuseoSansCyrl500
 			font-size: 15px
 		td 
-			border-bottom: 1px solid rgb(224, 224, 224)
 			&:nth-child(2n-1) 
 				width: 50%
 			&:nth-child(2n) 
@@ -469,7 +487,7 @@ h3
 	.all_lnews_link 
 		display: block
 		text-align: left
-		color: rgb(255, 144, 0)
+		color: rgb(54, 166, 207)
 		font-family: MuseoSansCyrl700
 		font-size: 15px
 		text-decoration: underline
@@ -478,12 +496,12 @@ h3
 	
 .left_form
 	width: 270px
-	background-color: rgb(255, 144, 0)
-	border-radius: 5px
+	background-color: #36a6cf
 	box-sizing: border-box
-	padding: 20px
+	padding: 20px 20px 39px 20px
+	position: relative
 	.like_h3 
-		color: rgb(47, 47, 47)
+		color: #fff
 		font-family: MuseoSansCyrl900
 		font-size: 18px
 		margin-bottom: 20px
@@ -494,8 +512,7 @@ h3
 		height: 39px
 		width: 100%
 		background-color: white
-		border: 2px solid rgb(255, 186, 96)
-		border-radius: 5px
+		border: none
 		padding: 0 15px
 		color: rgb(47, 47, 47)
 		font-family: MuseoSansCyrl300
@@ -507,8 +524,7 @@ h3
 		width: 100%
 		height: 89px
 		background-color: white
-		border: 2px solid rgb(255, 186, 96)
-		border-radius: 5px
+		border: none
 		padding: 10px 15px
 		color: rgb(47, 47, 47)
 		font-family: MuseoSansCyrl300
@@ -518,15 +534,18 @@ h3
 	button 
 		width: 100%
 		height: 39px
-		background-color: black
+		background-color: rgb(255, 240, 0)
 		border: none
-		border-radius: 5px
 		text-align: center
 		box-sizing: border-box
 		color: white
 		font-family: MuseoSansCyrl300
 		font-size: 15px
 		line-height: 18px
+		position: absolute
+		bottom: 0
+		left: 0
+		color: #000 
 		
 .left_widget_vk 
 	text-align: center
@@ -534,17 +553,16 @@ h3
 	margin-bottom: 20px
 
 .footer 
-	background-color: #F2F2F2 
+	background-color: #36a6cf 
 	padding: 30px 0
+	color: #FFF 
 	overflow: hidden
 
 .copy
-	color: rgb(47, 47, 47)
 	font-family: MuseoSansCyrl300
 	font-size: 14px
 	
 .footer_adress
-	color: rgb(47, 47, 47)
 	font-family: MuseoSansCyrl500
 	font-size: 12px
 	margin-left: 45px
@@ -555,7 +573,6 @@ h3
 	overflow: hidden
 
 .footer_phone 
-	color: rgb(47, 47, 47)
 	font-family: MuseoSansCyrl700
 	font-size: 18px
 	padding-left: 20px
@@ -567,7 +584,7 @@ h3
 
 .footer_mail
 	a
-		color: rgb(255, 149, 12)
+		color: #FFF 
 		font-family: MuseoSansCyrl700
 		font-size: 14px
 		text-decoration: underline

@@ -35,7 +35,7 @@
 .toggle-mnu span:before {
   width: 100%;
   height: 2px;
-  background-color: #ff950c;
+  background-color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-backface-visibility: hidden;
@@ -273,7 +273,10 @@ b, strong {
 
 .slider {
   max-width: 1170px;
-  margin: auto; }
+  margin: auto;
+  min-height: 265px; }
+  .slider .slide {
+    min-height: 265px; }
 
 .slider_ul {
   z-index: 10; }
@@ -821,6 +824,10 @@ blockquote {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .col-mnu {
+    background: none; }
+  .gray_line {
+    display: none; }
   .tags {
     position: relative;
     margin-bottom: 15px; }
@@ -852,24 +859,30 @@ blockquote {
       display: inline; }
     .main-mnu li {
       display: block;
-      float: none; }
+      float: none;
+      margin: 0; }
     .main-mnu a {
       display: block;
       color: #FFF;
       -webkit-border-radius: 0;
               border-radius: 0;
       border: none;
-      padding: 10px; }
+      padding: 10px;
+      text-align: right; }
       .main-mnu a:hover {
         text-decoration: underline; }
     .main-mnu a:hover, .main-mnu li.active a {
       border: none; }
   .top_phone {
-    margin-right: 10px; }
+    margin-right: 10px;
+    float: right;
+    margin-right: 0; }
   .top_mail {
-    float: left; }
+    float: right;
+    margin-right: 10px;
+    min-height: 18px; }
   .top_adress {
-    float: left;
+    float: right;
     text-align: left; }
   .col-mnu {
     float: right !important; }
@@ -880,7 +893,20 @@ blockquote {
   .footer_adress, .footer_phone {
     margin-left: 0; }
   .footer_adress {
-    padding-left: 25px; } }
+    padding-left: 25px; }
+  .top_mnu li:last-child {
+    margin-right: 0; }
+  .banner {
+    width: 100%;
+    height: auto; }
+  .img_block_img {
+    display: inline;
+    width: auto;
+    margin-right: 20px;
+    margin-bottom: 5px; }
+  .img_block_text {
+    float: none;
+    width: auto; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -898,6 +924,8 @@ blockquote {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .slider-arrow {
+    display: none; }
   h1 {
     margin-bottom: 15px; }
   .footer_adress, .footer_phone, .footer_mail {
@@ -913,22 +941,40 @@ blockquote {
     height: auto;
     margin-bottom: 0; }
   .top_adress {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding-left: 0;
+    background: none;
+    text-align: center; }
   .logo {
     width: 100%;
-    background-color: #FF9000;
     display: block;
     -webkit-border-radius: 0 0 5px 5px;
             border-radius: 0 0 5px 5px;
-    margin: auto; }
+    margin: auto;
+    margin-top: 10px; }
   .left_widget_vk {
     display: none; }
   .top_slider_wrap {
     overflow: hidden;
-    background-color: #F5F5F5; } }
+    background-color: #36a6cf; }
+  .col-mnu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    margin-top: 0; }
+  .top_contacts {
+    text-align: center; }
+    .top_contacts > div {
+      display: inline-block;
+      float: none;
+      margin-top: 10px; }
+    .top_contacts .top_mail {
+      padding-top: 10px; } }
 
-@media only screen and (max-width: 600px) {
-  /**/ }
+@media only screen and (max-width: 640px) {
+  .slider img {
+    display: none; } }
 
 @media only screen and (max-width: 570px) {
   .top_mail, .top_phone, .top_adress {
@@ -948,10 +994,25 @@ blockquote {
   .slider_wrap .like_h2 {
     font-size: 20px;
     margin-bottom: 10px; }
-  .slider_text li {
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 1.5; }
+  .slider_text {
+    left: 30px; }
+    .slider_text li {
+      font-size: 14px;
+      margin-bottom: 5px; }
+      .slider_text li:before {
+        font-size: 15px;
+        margin-right: 3px; }
+  .order_wrap {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    text-align: center;
+    width: 100%; }
+  .order {
+    position: static;
+    margin: auto;
+    display: block;
+    width: 70%; }
   .price_table td {
     font-size: 13px; } }
 
@@ -962,8 +1023,13 @@ blockquote {
     top: 40px; } }
 
 @media only screen and (max-width: 360px) {
+  .order {
+    font-size: 13px; }
   h2 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .logo img {
+    width: 100%;
+    height: auto; } }
 
 @media only screen and (max-width: 320px) {
   /**/ }

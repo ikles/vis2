@@ -543,6 +543,11 @@ h3 {
   .price_table tbody td:nth-child(2n) {
     width: 30%; }
 
+.price_table.inner_table {
+  border: 1px solid #36a6cf; }
+  .price_table.inner_table td {
+    background-color: #FFF; }
+
 .last_news {
   margin-top: 45px; }
   .last_news .like_h3 {
@@ -667,55 +672,69 @@ h3 {
   padding-left: 20px;
   background: url("../img/top_icon_mail.png") no-repeat left center; }
 
-.bread {
+.content .bread {
   width: 100%;
-  padding: 0 15px;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 12px;
   overflow: hidden;
   padding-bottom: 3px; }
-  .bread li {
+  .content .bread li {
     float: left;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-family: MuseoSansCyrl700I;
-    margin-bottom: 10px; }
-    .bread li a {
+    font-size: 12px;
+    font-family: MuseoSansCyrl500;
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background: none; }
+    .content .bread li:before {
+      content: ""; }
+    .content .bread li a {
+      font-size: 12px;
       color: black;
       text-decoration: underline; }
-      .bread li a:hover {
+      .content .bread li a:hover {
         text-decoration: none; }
-      .bread li a:after {
+      .content .bread li a:after {
         line-height: 0.8;
         font-size: 12px;
-        font-family: MuseoSansCyrl700I;
+        font-family: MuseoSansCyrl500;
         content: ">";
+        color: #000;
         float: right;
-        margin-right: 5px;
-        margin-left: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
         display: inline; }
-    .bread li span {
-      color: #ff9000; }
+    .content .bread li span {
+      color: #36a6cf; }
 
 .content li {
   margin-bottom: 13px;
   min-height: 22px; }
 
 .content ul li {
-  padding-left: 40px;
-  background: url("../img/check_li.png") no-repeat left top; }
+  padding-left: 35px;
+  background: url("../img/def.png") no-repeat left 0 top 10px; }
 
 .content ol {
   list-style-type: none;
   counter-reset: num; }
   .content ol li:before {
-    content: counter(num) ". ";
+    content: counter(num) " ";
     counter-increment: num;
-    color: #ff9000;
-    font-family: MuseoSansCyrl900I;
-    font-size: 18px;
-    text-transform: uppercase; }
+    color: #fff000;
+    font-family: MuseoSansCyrl700;
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    background-color: #36a6cf;
+    text-align: center;
+    display: block;
+    float: left;
+    line-height: 1.7;
+    margin-right: 10px; }
 
 .lists {
   margin-bottom: 40px;
@@ -730,38 +749,37 @@ h3 {
 
 blockquote {
   background-color: #F2F2F2;
-  color: #2f2f2f;
-  font-family: MuseoSansCyrl300I;
+  color: #36a6cf;
+  font-family: MuseoSansCyrl300;
   font-size: 15px;
   line-height: 21px;
   padding: 25px 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
   position: relative; }
   blockquote:before {
-    content: '“';
     position: absolute;
     top: 10px;
-    left: 5px;
-    line-height: 1; }
+    left: 0;
+    line-height: 1;
+    background-image: url("../img/left_quote.png"); }
   blockquote b {
     color: #2f2f2f;
     font-family: MuseoSansCyrl500;
     font-size: 15px; }
   blockquote:after {
-    content: '”';
     margin-bottom: 15px;
     position: absolute;
-    bottom: 15px;
-    right: 35px; }
+    bottom: 50px;
+    right: 0;
+    background-image: url("../img/right_quote.png"); }
   blockquote:before, blockquote:after {
-    color: #ff9000;
-    font-family: "MV Boli";
-    font-size: 72px;
-    font-weight: 400; }
+    width: 27px;
+    height: 24px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 0 0; }
 
 .ml0 {
   margin-left: 0 !important; }
@@ -777,7 +795,7 @@ blockquote {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .tags a {
-    color: #ff9000;
+    color: #36a6cf;
     font-family: MuseoSansCyrl700;
     font-size: 14px;
     text-decoration: underline;

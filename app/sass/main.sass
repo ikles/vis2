@@ -67,7 +67,6 @@ b, strong
 
 .top
 	background-color: #36a6cf 
-	margin-bottom: 20px
 	position: relative
 
 .top, .top .w_1200 
@@ -127,8 +126,9 @@ b, strong
 			border-bottom: 2px solid rgb(0, 101, 138)
 			text-decoration: none
 			
-.active a
-	
+.active a 
+	border-bottom: 2px solid rgb(0, 101, 138)
+	text-decoration: none
 	
 .top_phone
 	color: white
@@ -177,35 +177,66 @@ b, strong
 	padding-right: 0 !important
 
 .slider_wrap 
-	max-width: 1170px
 	width: 100%
 	margin: auto
-	border-radius: 5px
 	overflow: hidden
 	position: relative
+	background-color: #36A6CF 
+	padding-top: 5px
 	.like_h2 
-		color: black
-		font-family: MuseoSansCyrl900I
+		color: white
+		font-family: MuseoSansCyrl900
 		font-size: 24px
-		text-transform: uppercase
-		margin-bottom: 20px
+		margin-bottom: 12px
 		margin-top: 0
+
+.slider 
+	max-width: 1170px
+	margin: auto
 
 .slider_ul 
 	z-index: 10
 
 .slider_text
 	position: absolute
-	top: 55px
-	left: 42px
+	top: 35px
+	left: 70px
 	li
-		min-height: 22px
-		color: black
+		color: white
 		font-family: MuseoSansCyrl300
 		font-size: 16px
-		margin-bottom: 14px
-		padding-left: 40px
-		background: url("../img/check_li.png") no-repeat left center
+		margin-bottom: 0px
+		line-height: 1
+		&:before 
+			content: "— " 
+			color: white
+			font-family: MuseoSansCyrl700
+			font-size: 25px
+			margin-right: 10px
+
+.order
+	height: 40px
+	box-sizing: border-box
+	background-color: rgb(255, 240, 0)
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%)
+	border-radius: 4px
+	box-shadow: 0 0 10px rgba(242, 148, 0, 0.75)
+	display: block
+	position: absolute
+	left: 70px
+	bottom: 30px
+	color: black
+	font-family: MuseoSansCyrl300
+	font-size: 16px
+	text-align: center
+	text-decoration: none
+	padding: 12px 20px
+	&:hover 
+		text-decoration: none
+		color: #000 
+	&:focus
+		text-decoration: none
+		color: #000 
 
 /**************************************************/
 .slider
@@ -225,9 +256,11 @@ b, strong
   height: 100%
   float: left
   clear: none
+  position: relative
 
 .box 
-	position: relative	
+	position: relative
+	font-size: 0	
 
 .slider-arrow
   position: absolute
@@ -239,7 +272,6 @@ b, strong
   text-decoration: none
   color: #FFF
   font-family: Verdana
-  display: none
   border-radius: 3px
   &:hover
     opacity: 0.5
@@ -264,45 +296,59 @@ b, strong
   clear: none
   display: block
   margin: 0 1.5px
-  background: #000
+  background: #a6f1ff
   border-radius: 50px
   &:focus 
   	outline: none 		
   
 
 .slider-nav__item--current
-  background-color: rgb(255, 144, 0)
- 
+  background-color: #fff
+
+.slider-arrow
+	height: 44px
+	width: 22px
+	background-color: transparent 
+	line-height: 1
+	opacity: 1
+	bottom: 115px
+
+.slider-arrow.slider-arrow--right
+	background: url("../img/arr_r.png") no-repeat 0 0
+	right: 0
+.slider-arrow.slider-arrow--left 
+	background: url("../img/arr_l.png") no-repeat 0 0
+	left: 0
+
+
 /**************************************************/
 
 .left_mnu 
 	width: 270px
 	margin-bottom: 20px
-	background-color: rgb(242, 242, 242)
-	border: 3px solid rgb(255, 144, 0)
-	border-radius: 5px
+	background-color: #36a6cf
 	box-sizing: border-box
-	padding: 22px 0 0
-	.like_h2 
-		color: rgb(47, 47, 47)
+	padding: 0
+	.like_h2
+		background-color: rgb(31, 147, 190)
 		font-family: MuseoSansCyrl900
+		color: white
+		padding: 20px
 		font-size: 18px
-		padding: 0 20px
-		margin-bottom: 20px
 	li 
 	a 
-		font-family: MuseoSansCyrl500
-		display: block
-		color: rgb(47, 47, 47)
+		color: white
 		font-family: MuseoSansCyrl500
 		font-size: 15px
-		padding: 10px 20px
+		line-height: 30px
 		box-sizing: border-box
-		border-top: 1px solid #DAD9D7
-		line-height: 1.2 
+		display: block
+		padding: 10px 20px
+		line-height: 1
+	
 		&:hover 
-			background-color: #ff9000
 			text-decoration: none 
+			background-color: #6AC3E4 
 
 .main_content 
 	padding-bottom: 20px
@@ -319,13 +365,16 @@ b, strong
 		margin-bottom: 20px
 		&:last-child 
 			margin-bottom: 0
+
+.banner 
+	margin-bottom: 25px
 		
 	
 h1 
 	color: rgb(47, 47, 47)
 	font-family: MuseoSansCyrl700
 	font-size: 30px
-	margin-bottom: 35px
+	margin-bottom: 30px
 	line-height: 1
 
 h2

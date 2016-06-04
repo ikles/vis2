@@ -78,29 +78,48 @@ b, strong
 	display: block
 
 .col-mnu 
-	position: absolute
-	right: -50px
-	bottom: 0
+	//position: absolute
+	//right: -50px
+	//bottom: 0
 	background-color: #F2F2F2 
 	margin-top: 15px
 	box-sizing: border-box
 
+.gray_line 
+	position: absolute
+	right: 0
+	bottom: 0
+	height: 42px
+	width: 700px
+	background-color: #F2F2F2
+	z-index: 0
+
 
 .top_mnu
 	float: left
-	ul 
+	position: relative
+	z-index: 1
+	ul
+		display: block
+		text-align: center 
 		margin: 0
 	li 
-		float: left
+		display: inline-block
 		list-style: none
 		line-height: 1
-		margin: 0 20px
+		margin: 0 25px
+		&:first-child 
+			margin-left: 20px
+		&:last-child 
+			margin-right: 20px
+		
+		
 	a 		
 		color: rgb(55, 55, 55)
 		display: block
 		font-family: MuseoSansCyrl700
 		font-size: 14px
-		padding: 15px 0 13px 0
+		padding: 13px 0
 		line-height: 1
 		border-bottom: 2px solid #F2F2F2 
 		box-sizing: border-box
